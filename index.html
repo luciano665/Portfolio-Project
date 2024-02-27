@@ -4,28 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./resources/css/stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Portfolio 1st page</title>
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Luciano M.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
-
-      <section clas="home" id="home">
+    <!--Home section-->
+    <section clas="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Luciano Maldonado</h1>
-            <h3>And I'm a <span> peson who loves technolgy</span></h3>
+            <h3>And I'm a <span class="many-text"> peson who loves technolgy</span></h3>
             <p>This is my website where I wanna share my life in the tech field. Things I build, solve and who I'm in general. I hope you enjoyed.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="#" class="btn">Download Resume</a>
         </div>
-      </section>
-      <script src="./script/script.js"></script>
+        <div class="home-img">
+            <img src="" alt="">
+        </div>
+    </section>
+
+    <!--About section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading"> <span>About Me:</span></h2>
+            <h3>Computer Science student and a technolgy enthusiast</h3>
+            <p>My name is Luciano as you may already know. I'm 20 years old, currently pursuing a bachelor of Science in CS with a minor is applied
+                mathematics. I'm very passionate when it come to learning new technolgy. However, my passion and the reason I'm pursuing what I'm prsiong is beceasue of Machine Learning/AI.
+                This subject is the where I wanna dedicate my life in order to create solutions and help my community. </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!--Projetcs section-->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projetcs</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <i class='bx bxl-java'></i>
+                <h3>RESTful API</h3>
+                <p>I develop a RESTful API for a dining review app. I use the java language and spring framework. The API has a admin controll over reviews and a user-centric approach. 
+                    Where users can add reviews and look for restaurants base on allergies and cousine type. 
+                    H2 database was use to store the data and for security measures. Overall the project was focused on efficiently handle data processing and security measures
+                </p>
+                <a href="#" class="btn">Read More</a>
+                <a class="btn"href="https://github.com/luciferrr665/DinningReviewAPI" target="_blank"><i class='bx bxl-github' ></i></a>
+            </div>
+            <div class="projects-box">
+                <i class='bx bxs-calculator'></i>
+                <h3> Simple Calculator</h3>
+                <p>I create a basic calculator that handles basic arithmetic operations with Java.</p>
+                <a href="#" class="btn">Read More</a>
+                <a class="btn" href="" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="projects-box">
+                <i class='bx bxl-html5'></i>
+                <i class='bx bxl-css3' ></i>
+                <i class='bx bxl-javascript' ></i>
+                <h3>My personal Website(the one you are interacting with)</h3>
+                <p>Develop a responsive website from scratch using HTML, CSS and JavaScript. The project was focused on 4 main parts as you cna see, Home page, About, Projects and contact. Each one with interactive settings and soem animated features. In order to improve my abilities with the prevoius languages mentioned.</p>
+                <a href="#" class="btn">Read More</a>
+                <a class="btn" href="https://github.com/luciferrr665/Portfolio-Project" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </section>
+    <!--Contact section-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Let's work together! <span>Contact Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            ><textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icons">
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <p>Copyright© 2024 Luciano Maldonado | All rights Reserved</p>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-to-top'></i></a>
+        </div>
+    </footer>
+
+    <!--Typed JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
