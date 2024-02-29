@@ -175,9 +175,30 @@ const typed = new Typed('.many-text', {
     retina_detect: true
   });
 
+  //rocket lunch
+  function stars(){
+    let count = 50;
+    let home = document.querySelector('.home');
+    let i = 0;
+    while(i < count){
+      let star = document.createElement('i');
+      let x = Math.floor(Math.random() * window.innerWidth);
+      let y = Math.floor(Math.random() * window.innerHeight);
 
-  //email clearing after sending email
-const form = document.getElementById('form');
-  window.onload = function() {
-    document.getElementById(form).reset();
-  };
+      let duration = Math.random() * 1;
+      let h = Math.random() * 100;
+
+
+      star.style.left = x + 'px';
+      star.style.top = y + 'px';
+      star.style.width = 1 + 'px';
+      star.style.height =  50 + h + 'px';
+      star.style.animationDuration = duration + 's';
+      star.style.backgroundColor = 'white'; // temporary for visibility
+      star.style.zIndex = '1'; 
+
+      home.appendChild(star);
+      i++
+    }
+  }
+  stars();
