@@ -51,7 +51,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .projects-container, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .projects-container, .contact form, .rocket, .scene', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
@@ -59,7 +59,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 const typed = new Typed('.many-text', {
-    strings: ['Person who loves technolgy.', 'human.', 'student.','person who likes to growht by learning new things', 'problem solver' ,'coding enthusiast.', 'Software developer' , 'AI/ML enthusiast.','future ML-engineer.'],
+    strings: ['Person who loves technolgy.', 'human.', 'student.','person who likes to grow by learning new things', 'problem solver' ,'coding enthusiast.', 'Software developer' , 'AI/ML enthusiast.','future ML-engineer.'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -174,31 +174,3 @@ const typed = new Typed('.many-text', {
     },
     retina_detect: true
   });
-
-  //rocket lunch
-  function stars(){
-    let count = 50;
-    let home = document.querySelector('.home');
-    let i = 0;
-    while(i < count){
-      let star = document.createElement('i');
-      let x = Math.floor(Math.random() * window.innerWidth);
-      let y = Math.floor(Math.random() * window.innerHeight);
-
-      let duration = Math.random() * 1;
-      let h = Math.random() * 100;
-
-
-      star.style.left = x + 'px';
-      star.style.top = y + 'px';
-      star.style.width = 1 + 'px';
-      star.style.height =  50 + h + 'px';
-      star.style.animationDuration = duration + 's';
-      star.style.backgroundColor = 'white'; // temporary for visibility
-      star.style.zIndex = '1'; 
-
-      home.appendChild(star);
-      i++
-    }
-  }
-  stars();
