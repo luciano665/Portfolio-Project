@@ -270,7 +270,9 @@ span{
     overflow: hidden;
  }
  .projects {
-    background-image: url('resources/images/coding.jpg');
+    background-image: url('../images/coding.jpg');
+
+    
     
  }
 
