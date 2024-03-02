@@ -79,7 +79,7 @@ section{
     height: 2px;
     background-color: white;
     border-radius: 50%;
-    opacity: 0.8; /* Adjust opacity to make stars less intense if desired */
+    opacity: 0.8; /* Adjust opacity to make stars less intense */
 }
 @keyframes moveStars {
     from { transform: translateY(100vh); } /* Start below the view */
